@@ -1,11 +1,21 @@
-{
-  "name": "fis-quickstart-demo",
-  "version": "0.0.9",
-  "description": "a fis quick get started demo",
-  "keywords": [
-    "fis",
-    "demo"
-  ],
-  "repository": "https://github.com/hefangshi/fis-quickstart-demo",
-  "license": "MIT"
-}
+var data = {
+		"users": [
+		{
+		"name":"张国立",
+		"sex":"男",
+		"email":"zhangguoli@123.com"
+		},
+		{
+		"name":"张铁林",
+		"sex":"男",
+		"email":"zhangtieli@123.com"
+		},
+		{
+		"name":"邓婕",
+		"sex":"女",
+		"email":"zhenjie@123.com"
+		}
+	]
+
+
+};
