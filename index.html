@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖游戏</title>
+    <link rel='stylesheet' href='css/animate.css'>
+    <link rel='stylesheet' href='css/buttons.css'>
+    <link rel='stylesheet' href='css/style.css?v=0.0.5'>
+</head>
+<body>
+
+    <!--自定义抽奖-->
+    <div class="custom-draw">
+        <input class="number-input" id="wardNumber" placeholder="请输入抽奖数量" type="text">
+        <div class="cirle-btn award" id="award-3" data-award="3">三</div>
+        <div class="cirle-btn award" id="award-2" data-award="2">二</div>
+        <div class="cirle-btn award" id="award-1" data-award="1">一</div>
+        <div class="cirle-btn award" id="award-0" data-award="0">特</div>
+    </div>
+    <!--音乐开关-->
+    <a id="musicButton" class="music-button" href="javascript:;" data-open="1"></a>
+    <!--自定义抽奖开关-->
+    <a id="settingButton" class="setting-button" href="javascript:;" data-open="1"></a>
+    <!--清除数据开关-->
+    <a id="clearButton" class="clear-button" href="javascript:;" data-open="1"></a>
+
+    <audio id="music" loop="loop" preload="auto" src="winner.mp3">
+        你的浏览器不支持audio标签
+    </audio>
+
+    <!-- 抽奖图片 -->
+    <div class="container">
+        <ul id='gallery'></ul>
+    </div>
+    <div style="clear:both;"></div>
+    <!-- 抽奖按钮 -->
+    <div class="footer">
+        <button id="action" class="button button-3d button-action button-pill button-jumbo" data-action="start">立即抽奖</button>
+    </div>
+    <!-- 中奖弹窗 -->
+    <div class="pop-up" style="display: none">
+        <div class="pop-up-bg"></div>
+        <!-- 特等奖 -->
+        <div class="pop-up-content prize-0" id="prize-0" style="display: none">
+            <div class="lottery-img"><img src="./images/bg_no0@2x.png" alt="" width="100%"/></div>
+            <ul class="user-group">
+                <li class="user-box">
+                    <div class="user-photo"><img src="./images/0.jpg" alt=""/></div>
+                    <div class="user-name">·姓名·</div>
+                    <div class="user-number">工号</div>
+                    <div class="user-branch">职位</div>
+                </li>
+            </ul>
+        </div>
+        <!-- 一等奖 -->
+        <div class="pop-up-content prize-1" id="prize-1" style="display: none">
+            <div class="lottery-img"><img src="./images/bg_no1@2x.png" alt="" width="100%"/></div>
+            <ul class="user-group">
+                <!-- 排列3个 -->
+            </ul>
+        </div>
+        <!-- 二等奖 -->
+        <div class="pop-up-content prize-2" id="prize-2" style="display: none">
+            <div class="lottery-img"><img src="./images/bg_no2@2x.png" alt="" width="100%"/></div>
+            <ul class="user-group">
+                <!-- 排列8个 -->
+            </ul>
+        </div>
+        <!-- 三等奖 -->
+        <div class="pop-up-content prize-3" id="prize-3" style="display: none">
+            <div class="lottery-img"><img src="./images/bg_no3@2x.png" alt="" width="100%"/></div>
+            <ul class="user-group">
+                <!-- 排列13个 -->
+            </ul>
+        </div>
+    </div>
+    <script src='js/jquery.js'></script>
+    <script src='js/buttons.js'></script>
+    <script src="js/index.js?v=0.0.5"></script>
+</body>
+</html>
