@@ -39,17 +39,6 @@ function fileDisplay(filePath){
                 fileDisplay(filedir);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
               }
               if(isFile && isImage){
-                /*fs.readFile(filedir, 'utf8', (err, data) => {
-                  // 将 glzxlink 改变成 newglzxlink
-                  let result = data.replace(/glzxlink/g, 'newglzxlink').replace(/order_center\//g, '')
-                  fs.writeFile(filedir, result, 'utf8', (err) => {
-                    if (err) {
-                      return console.log(err)
-                    } else {
-                      // console.log(`tips: "${filedir}" to "path" change success`)
-                    }
-                  })
-                })*/
                 if (filename) {
                   let [a, b, c, d] = filename.replace(/\.(jpg|jpeg|png|gif)$/i,'').split(/[\-|\_]/)
                   d = d.trim()
